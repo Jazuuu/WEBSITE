@@ -134,3 +134,25 @@ th {
 tr:nth-child(even) {
   background-color: #111;
 }
+
+/*Footer*/
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: #ffcccc;
+}
+
+
