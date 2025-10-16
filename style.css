@@ -112,3 +112,25 @@ button:hover,
 a.button:hover {
   background-color: #ff3333;
 }
+
+/*Tables (Contact Page)*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #8b0000;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #111;
+}
