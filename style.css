@@ -104,13 +104,46 @@ a.button {
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
+  display: block;             
+  margin: 10px auto;           
+  text-align: center;
+  width: fit-content;          
 }
 
 button:hover,
 a.button:hover {
   background-color: #ff3333;
+}
+
+
+/* Center the main image between the arrows */
+.game-carousel {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: 20px;               
+}
+
+.main-game {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 400px;   
+  height: auto;
+}
+
+/* Keep arrow buttons the same style */
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(1, 0, 12);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.carousel-btn:hover {
+  color: #ff4d4d;
 }
 
 /*Tables (Contact Page)*/
@@ -139,7 +172,11 @@ tr:nth-child(even) {
 footer {
   background-color: #8b0000;
   color: white;
-  text-align: center;
+  text-align: center;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px 10px;
   margin-top: 30px;
   font-size: 14px;
@@ -154,5 +191,38 @@ footer a {
 footer a:hover {
   color: #ffcccc;
 }
+/*Game Cards (Store & Genres)*/
+div {
+  margin-bottom: 20px;
+}
 
+div img {
+  width: 100%;
+  border-radius: 8px;
+}
 
+div p {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/*Responsive Design*/
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+}
