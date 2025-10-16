@@ -133,17 +133,48 @@ a.button:hover {
 }
 
 /* Keep arrow buttons the same style */
+.recommended {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.game-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* keeps arrows close to main image */
+  flex-wrap: wrap;
+}
+
+.main-game {
+  width: 400px;
+  border-radius: 12px;
+  display: block;
+}
+
+.side-game img {
+  width: 150px;
+  border-radius: 12px;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.side-game img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 .carousel-btn {
   background-color: transparent;
   border: none;
-  color: rgb(1, 0, 12);
+  color: black;
   font-size: 2rem;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .carousel-btn:hover {
-  color: #ff4d4d;
+  color: #fdfdfd;
 }
 
 /*Tables (Contact Page)*/
