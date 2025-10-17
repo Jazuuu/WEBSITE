@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Crimson Edge - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crimson Edge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link 
+    rel="icon" 
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>"
+  />
 </head>
 <body>
 
@@ -40,57 +44,53 @@
     <button>Create Account</button>
   </section>
 
-  <!-- ---------- RECOMMENDED GAMES ---------- -->
-<section class="recommended">
-  <h2>Recommended Games For You</h2>
-  <div class="game-carousel">
-    <div class="side-game">
-      <img src="img/Silksong.png" alt="Silksong">
+  <!-- ---------- RECOMMENDED GAMES / Carousel Section ---------- -->
+  <section class="recommended">
+    <h2>Recommended Games For You</h2>
+    <div class="game-carousel">
+      <div class="side-game" id="left-game">
+        <img src="" alt="" />
+      </div>
+
+      <button class="carousel-btn prev">⟵</button>
+
+      <img src="" alt="" class="main-game" id="main-game" />
+
+      <button class="carousel-btn next">⟶</button>
+
+      <div class="side-game" id="right-game">
+        <img src="" alt="" />
+      </div>
     </div>
-
-    <button class="carousel-btn">⟵</button>
-
-    <img src="img/apex.png" alt="Apex Legends" class="main-game">
-
-    <button class="carousel-btn">⟶</button>
-
-    <div class="side-game">
-      <img src="img/Expedition.png" alt="Another Game">
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- ---------- FOOTER LINKS ---------- -->
-<div class="footer-links">
-  <div class="footer-item">
-    <a href="Games.html">
-      <img src="img/games.png" alt="Games">
-      <p>Games</p>
-    </a>
+  <div class="footer-links">
+    <div class="footer-item">
+      <a href="Games.html">
+        <img src="img/games.png" alt="Games">
+        <p>Games</p>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="About.html">
+        <img src="img/about.png" alt="About Us">
+        <p>About Us</p>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="Contact.html">
+        <img src="img/contact.png" alt="Contact Us">
+        <p>Contact Us</p>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="Store.html">
+        <img src="img/store.png" alt="Store">
+        <p>Store</p>
+      </a>
+    </div>
   </div>
-
-  <div class="footer-item">
-    <a href="About.html">
-      <img src="img/about.png" alt="About Us">
-      <p>About Us</p>
-    </a>
-  </div>
-
-  <div class="footer-item">
-    <a href="Contact.html">
-      <img src="img/contact.png" alt="Contact Us">
-      <p>Contact Us</p>
-    </a>
-  </div>
-
-  <div class="footer-item">
-    <a href="Store.html">
-      <img src="img/store.png" alt="Store">
-      <p>Store</p>
-    </a>
-  </div>
-</div>
 
   <!-- ---------- FOOTER ---------- -->
   <footer>
@@ -105,5 +105,7 @@
     <p><em>Play More. Pay Less. Discover New Worlds.</em></p>
   </footer>
 
+  
+  <script src="script.js"></script>
 </body>
 </html>
