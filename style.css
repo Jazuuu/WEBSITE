@@ -87,6 +87,17 @@
     font-weight: 700;
   }
 
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
   /*  Hero / Banner Sections */
   section img {
     width: 100%;
