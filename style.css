@@ -10,48 +10,79 @@ body {
   background-color: #000000;
   color: white;
   line-height: 1.6;
+  padding-top: 100px;     
 }
 
 
 /* Header & Navigation Bar*/
 header {
-  background-color: #8b0000;
-  padding: 15px 0;
+  background: linear-gradient(to bottom, #8b0000, #5c0000);
+  color: #fff;
+  padding: 18px 0 10px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ff1a1a;
 }
 
 header h1 {
-  color: white;
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 100, 100, 0.4);
 }
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-  margin: 0 15px;
+  margin: 0;
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 5px 8px;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  color: #ff4040;
+  background-color: #b00000;
+  color: #ffcccc;
 }
 
-nav a:active,
-nav a:focus {
-  color: #ff7070;
+nav a.active {
+  background-color: #ff1a1a;
+  color: #fff;
+  font-weight: 700;
 }
 
 /*  Hero / Banner Sections */
@@ -60,6 +91,29 @@ section img {
   height: auto;
   border-radius: 8px;
   margin: 15px 0;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 3px solid #b00000;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.15);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+  border-radius: 0; 
+  opacity: 0.95;
+  transition: transform 0.6s ease;
 }
 
 /*Page Titles & Sections*/
@@ -118,7 +172,7 @@ a.button:hover {
 }
 
 
-/* Center the main image between the arrows */
+
 .game-carousel {
   display: flex;
   align-items: center;     
@@ -134,7 +188,7 @@ a.button:hover {
   height: auto;
 }
 
-/* Keep arrow buttons the same style */
+
 .recommended {
   text-align: center;
   margin: 30px auto;
@@ -144,7 +198,7 @@ a.button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* keeps arrows close to main image */
+  gap: 10px; 
   flex-wrap: wrap;
 }
 
@@ -178,6 +232,316 @@ a.button:hover {
 .carousel-btn:hover {
   color: #fdfdfd;
 }
+
+/* About us Section */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  color: white;
+  background-color: #000;
+  padding: 60px 10%;
+}
+
+.about-us h2 {
+  font-size: 2.8em; 
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ff4d4d;
+  letter-spacing: 1px;
+}
+
+.about-us p {
+  line-height: 1.8;
+  font-size: 1.2em; 
+  margin-bottom: 15px;
+}
+
+.about-us ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+  font-size: 1.15em; 
+}
+
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.promo-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.promo-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: contain;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/*Contact Section Style*/
+.contact-us {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-us p {
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.contact-us p:nth-of-type(2) {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 15px auto;
+  font-weight: 600;
+}
+
+
+.contact-us p:nth-of-type(3) {
+  color: #ff7a7a;
+  font-weight: 500;
+  display: block;
+  margin: 10px auto 25px auto;
+}
+
+
+.map {
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.map iframe {
+  border: 3px solid #d32f2f;
+  border-radius: 10px;
+  width: 600px;
+  height: 350px;
+  max-width: 90%;
+}
+.store-hours h3{
+  text-align: center;
+}
+
+/* Genre Section Styles */
+.genre-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a0a0a;
+  border: 1px solid #2b0000;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 25px;
+}
+
+.genre-section img {
+  width: 45%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain; 
+  border-radius: 10px;
+  border: 2px solid #ff1a1a;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.genre-section .text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.genre-section h3 {
+  color: #ff4d4d;
+  border-bottom: 2px solid #d32f2f;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+
+.genre-section p {
+  color: #ddd;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.more-genres {
+  text-align: center;
+  background-color: #0a0a0a;
+  padding: 60px 20px;
+  border-top: 2px solid #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  margin-top: 60px;
+}
+
+.more-genres p {
+  color: #ff4d4d;
+  font-size: 32px; 
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.more-genres button {
+  background-color: #ff1a1a;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.more-genres button:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* Store Section Style*/
+.store-section {
+  text-align: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+  margin-top: 30px;
+  justify-items: center; 
+}
+
+.game-card {
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #b00000; /* subtle divider under image */
+}
+
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.price-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(248, 0, 0, 0.8);
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-cart,
+.icon-heart {
+  width: 22px;
+  height: 22px;
+  background-color: rgba(255, 70, 70, 0.8);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-cart:hover,
+.icon-heart:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.1);
+}
+
+.icon-cart img,
+.icon-heart img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+.show-more {
+  margin-top: 40px;
+  background-color: #ff1a1a;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 35px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.show-more:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+
 
 /*Tables (Contact Page)*/
 table {
@@ -317,22 +681,4 @@ div p {
   font-weight: 600;
 }
 
-/*Responsive Design*/
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  section {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  header h1 {
-    font-size: 18px;
-  }
-}
