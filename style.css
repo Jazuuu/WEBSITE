@@ -21,7 +21,7 @@
     color: #fff;
     padding: 20px 0 12px;
     text-align: center;
-    position: fixed; /* <--- stays fixed by default */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -711,7 +711,7 @@
     }
 
     header {
-      position: sticky; 
+      position: static; 
       top: 0;
       z-index: 1000;
     }
@@ -917,7 +917,7 @@
 
 .map iframe {
   width: 95%;
-  height: 320px; /* Increased from 250px */
+  height: 320px; 
   border: 2px solid #ff1a1a;
   border-radius: 14px;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
